@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const GITHUB_REPO_NAME = 'TodoList.git';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/todo-list.github.io/",
+  base: `/${GITHUB_REPO_NAME}/`,
 })
